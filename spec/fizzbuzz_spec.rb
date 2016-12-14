@@ -1,18 +1,29 @@
-require 'fizzbuzz'
+require 'FizzBuzz'
 
-describe 'fizzbuzz' do
-  it 'returns "fizz" when passed 3' do
-    expect(fizzbuzz(3)).to eq 'fizz'
-  end
-  it 'returns "buzz" when passed 5' do
-    expect(fizzbuzz(5)).to eq 'buzz'
-  end
+describe FizzBuzz do
+  context 'If a number is divisible by' do
 
-  it 'returns "fizzbuzz" when passed 15' do
-    expect(fizzbuzz(15)).to eq 'fizzbuzz'
-  end
+    it 'returns "fizz" for the number 3' do
+      fizzbuzz = FizzBuzz.new
+      # result = fizzbuzz.divisible_by(3)
+      expect(result).to eq 'fizz'
+    end
+    it 'returns "buzz" for the number 3' do
+      fizzbuzz = FizzBuzz.new
+      result = fizzbuzz.divisible_by(5)
+      expect(result).to eq 'buzz'
+    end
 
-  it 'returns "number" when passed number' do
-    expect(fizzbuzz(14)).to eq 14
+    it 'returns "fizzbuzz" when passed 15' do
+      fizzbuzz = FizzBuzz.new
+      result = fizzbuzz.divisible_by(15)
+      expect(result).to eq 'fizzbuzz'
+    end
+
+    it 'returns "number" when passed number' do
+      fizzbuzz = FizzBuzz.new
+      result = fizzbuzz.divisible_by(14)
+      expect(result).to eq 14
+    end
   end
 end
