@@ -5,7 +5,7 @@ describe FizzBuzz do
 
     it 'returns "fizz" for the number 3' do
       fizzbuzz = FizzBuzz.new
-      # result = fizzbuzz.divisible_by(3)
+      result = fizzbuzz.divisible_by(3)
       expect(result).to eq 'fizz'
     end
     it 'returns "buzz" for the number 3' do
